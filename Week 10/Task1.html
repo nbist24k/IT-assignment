@@ -6,35 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
-        .box{
-            border: 5px solid;
-            width: 500px;
-            height: 550px;
+        body{
+            margin: 0;
         }
-        div.col1{
+        .box{
+            border: 1px solid;
+            width: 370px;
+            height: 258px;
+        }
+        div .cols{
             border: solid 1px grey;
             width:150px;
             height: 50px;
-            text-align: center;
             margin: 1px;
+            display: inline-block;
+            text-align: center;
         }
+        
+        div.col2{
+            width: 100px;
+        }
+
         
         div.blue1 {
             width:150px;
             height:200px;
-            background-color:blue;
+            background-color: #B4D6E3;
             margin:1px ;
             border: solid 1px grey;
+            position: absolute;
         }
-        div.yellow1 {width:100px;height:150px;background-color:yellow;
-                    border-style:none;}
-                    /* position:relative;left:100px;top:-200px;} */
-        div.red1 {width:100px;height:150px;background-color:red;
-                    border-style:none;}
-                    /* position:relative;left:200px;top:-350px;} */
-        div.green1 {width:200px;height:50px;background-color:green;
-                    border-style:none;}
-                    /* position:relative;left:100px;top:-350px;} */
+        div.yellow1 {
+            width:100px;
+            height:40px;
+            background-color:yellow;
+            border: solid 1px grey; 
+            margin: 1px;   
+            position: absolute;
+            text-align: right;
+            left: 159px;
+        }
+        div.red1 {
+            width:100px;
+            height:40px;
+            background-color:red;
+            border: solid 1px grey;
+            position: absolute;
+            text-align: center;
+            margin: 1px;
+            left: 267px;
+        }
+        div.green1 {
+            margin: 1px;
+            width:208px;
+            height:156px;
+            background-color: green;
+            border: solid 1px grey;
+            position: absolute;
+            left: 159px;
+            top:99px
+        }
     </style>
 
     <title>Task 1</title>
@@ -42,11 +73,31 @@
 </head>
 
    <div class="box">
-    <div class="col1">Column1</div>
-    <div class="blue1"></div>
-    <div class="yellow1"></div>
-    <div class="red1"></div>
-    <div class="green1"></div>
+    <div class="cols"><p>Column1</p></div>
+    <div class="cols col2"><p>Column2</p></div>
+    <div class="cols col2"><p>Column3</p></div> 
+    <div class="blue1">
+        <p>A numbered list:</p>
+        <ol>
+            <li>Able</li>
+            <li>Baker</li>
+            <li>Charlie</li>
+            <li>Delta</li>
+            <li>Echo</li>
+        </ol>
+    </div>
+    <div class="yellow1"><p>B</p></div>
+    <div class="red1"><p>C</p></div>
+    <div class="green1">
+        <p>An unnumbered list:</p>
+        <ul>
+            <li>Pounds</li>
+            <li>Dollars</li>
+            <li>Euro</li>
+            <li>Yen</li>
+            <li>Roubles</li>
+        </ul>
+    </div>
    </div>
 <body>
     
